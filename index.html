@@ -8,7 +8,26 @@
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="auth-locked">
+<div id="auth-gate" class="auth-gate" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+  <div class="auth-panel">
+    <div class="auth-brand"><img src="assets/kontec-logo.svg" alt="KONTEC-CONSTRUCT GmbH"></div>
+    <span class="auth-eyebrow">Geschützte Website-Preview</span>
+    <h1 id="auth-title">KONTEC Website</h1>
+    <p>Diese Vorschau ist nicht öffentlich freigegeben. Bitte Passwort eingeben.</p>
+    <form id="auth-form" class="auth-form" autocomplete="off">
+      <label for="auth-password">Passwort</label>
+      <div class="auth-input-wrap">
+        <input id="auth-password" name="password" type="password" inputmode="text" autocomplete="current-password" placeholder="Passwort eingeben" required>
+        <button class="auth-toggle" type="button" aria-label="Passwort anzeigen">Anzeigen</button>
+      </div>
+      <button class="auth-submit" type="submit">Vorschau öffnen <span>→</span></button>
+      <p id="auth-error" class="auth-error" role="alert" aria-live="polite"></p>
+    </form>
+    <div class="auth-meta"><span>Private Preview</span><span>·</span><span>KONTEC-CONSTRUCT GmbH</span></div>
+  </div>
+</div>
+
 <div class="topbar">
   <div class="container">
     <div>Frankfurt am Main · Bauleistungen & baukonstruktive Projektentwicklung</div>

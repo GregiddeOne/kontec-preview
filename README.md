@@ -33,3 +33,12 @@ Alle nicht verifizierten Leistungen, Projektangaben und Claims sind im Frontend 
 - Orange Akzentfarbe vollständig auf Blau umgestellt (`#1D71B8`, Sekundärblau `#4A9BD5`).
 - Lokale SVG-Wortmarke `assets/kontec-logo.svg` eingebaut.
 - Hinweis: Das originale Logo-Asset der bestehenden KONTEC-Website war bei der Recherche technisch nicht direkt extrahierbar. Die SVG verwendet daher den Firmennamen und die sichtbare blaue Markenrichtung als saubere lokale Wortmarke. Sobald die Original-PNG/SVG vorliegt, kann sie ohne Layoutänderung 1:1 ersetzt werden.
+
+## Passwortschutz der Preview
+
+Die Website enthält einen clientseitigen Vorschau-Schutz auf allen HTML-Seiten.
+
+- Aktuelles Vorschau-Passwort: `KONTEC2026`
+- Nach erfolgreicher Eingabe bleibt die Website für die aktuelle Browser-Session entsperrt.
+- Der Vergleich erfolgt gegen einen SHA-256-Hash in `script.js`; das Passwort steht dort nicht im Klartext.
+- Wichtig: GitHub Pages bleibt technisch öffentlich. Dieser Schutz ist für eine Präsentations-Preview gedacht und **nicht** für vertrauliche/NDA-Inhalte. Statische Dateien und Assets können prinzipiell weiterhin direkt abgerufen werden.
