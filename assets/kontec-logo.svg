@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 126" role="img" aria-labelledby="title desc">
+<title id="title">KONTEC-CONSTRUCT GmbH</title>
+<desc id="desc">KONTEC-CONSTRUCT Wortmarke in Blau</desc>
+<g fill="#1d71b8">
+  <text x="0" y="72" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-3">KONTEC</text>
+  <rect x="2" y="86" width="392" height="5" rx="2.5"/>
+  <text x="2" y="118" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="7">CONSTRUCT</text>
+  <text x="427" y="118" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">GMBH</text>
+</g>
+</svg>

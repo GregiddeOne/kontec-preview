@@ -1,0 +1,11 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28445c"/><stop offset="1" stop-color="#0c1722"/></linearGradient></defs>
+<rect width="900" height="650" fill="url(#g)"/>
+<g opacity=".22" stroke="#b6c8d8" fill="none"><path d="M0 520 L900 520M0 450L900 450M0 380L900 380"/><path d="M120 120V600M300 90V600M480 80V600M660 110V600M840 140V600"/></g>
+<g transform="translate(130 135)">
+<rect x="0" y="0" width="150" height="380" rx="7" fill="#0a1119" stroke="#65829a"/><rect x="190" y="0" width="150" height="380" rx="7" fill="#0a1119" stroke="#65829a"/><rect x="380" y="0" width="150" height="380" rx="7" fill="#0a1119" stroke="#65829a"/>
+<g fill="#1d71b8"><circle cx="25" cy="32" r="5"/><circle cx="215" cy="32" r="5"/><circle cx="405" cy="32" r="5"/></g>
+<g stroke="#46637b"><path d="M18 70H132M18 105H132M18 140H132M18 175H132M18 210H132M18 245H132M18 280H132M18 315H132"/><path d="M208 70H322M208 105H322M208 140H322M208 175H322M208 210H322M208 245H322M208 280H322M208 315H322"/><path d="M398 70H512M398 105H512M398 140H512M398 175H512M398 210H512M398 245H512M398 280H512M398 315H512"/></g>
+</g>
+<path d="M80 565H820" stroke="#4a9bd5" stroke-width="4"/><text x="80" y="610" font-family="Arial" font-size="18" letter-spacing="4" fill="#a9bac7">MISSION CRITICAL / DATA CENTER</text>
+</svg>
