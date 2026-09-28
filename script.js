@@ -64,8 +64,18 @@ kontecInitPreviewGate();
 
 const menuBtn=document.querySelector('.menu-btn');
 const nav=document.querySelector('.navlinks');
-if(menuBtn&&nav){menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));}
-document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+function closeMenu(){
+  nav?.classList.remove('open');
+  menuBtn?.setAttribute('aria-expanded','false');
+  menuBtn?.setAttribute('aria-label','Menü öffnen');
+}
+if(menuBtn&&nav){menuBtn.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded',String(open));
+  menuBtn.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');
+});}
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',closeMenu));
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu();});
 
 const form=document.querySelector('#contact-form');
 if(form){form.addEventListener('submit',e=>{
@@ -87,4 +97,53 @@ if ('IntersectionObserver' in window) {
     });
   }, {threshold: 0.08});
   revealTargets.forEach(el => io.observe(el));
+}
+
+// Native dialog keeps keyboard focus inside the gallery and supports Escape.
+// Without dialog support or JavaScript, each thumbnail links to its full image.
+const lightbox = document.querySelector('.lightbox');
+if (lightbox && typeof lightbox.showModal === 'function') {
+  const links = Array.from(document.querySelectorAll('.gallery-link'));
+  const viewer = lightbox.querySelector('.lightbox-image');
+  const caption = document.getElementById('lightbox-caption');
+  const count = document.getElementById('lightbox-count');
+  let group = [];
+  let current = 0;
+  let opener = null;
+  function showPhoto(index) {
+    current = (index + group.length) % group.length;
+    const link = group[current];
+    viewer.src = link.href;
+    viewer.alt = link.querySelector('img').alt;
+    caption.textContent = link.dataset.caption;
+    count.textContent = `${current + 1} / ${group.length}`;
+  }
+  links.forEach(link => link.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    opener = link;
+    group = links.filter(item => item.dataset.gallery === link.dataset.gallery);
+    showPhoto(group.indexOf(link));
+    lightbox.showModal();
+    document.body.classList.add('gallery-open');
+    lightbox.querySelector('.lightbox-close').focus();
+  }));
+  lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', () => showPhoto(current - 1));
+  lightbox.querySelector('.lightbox-next').addEventListener('click', () => showPhoto(current + 1));
+  lightbox.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      showPhoto(current + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  lightbox.addEventListener('click', event => {
+    if (event.target !== lightbox) return;
+    const rect = lightbox.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) lightbox.close();
+  });
+  lightbox.addEventListener('close', () => {
+    document.body.classList.remove('gallery-open');
+    opener?.focus({preventScroll:true});
+  });
 }

@@ -1,0 +1,134 @@
+[
+  {
+    "asset": "boettger-wohnen",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\Bo╠êttger Wohnzimmer_300px.jpg",
+    "alt": "Wohnzimmer mit Parkett und hohen Flügeltüren",
+    "widths": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  {
+    "asset": "boettger-durchblick-v2",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\wohnungbo╠êttia V2.png",
+    "alt": "Rundbogen und Durchblick zwischen den Wohnräumen",
+    "widths": [
+      640,
+      1024
+    ]
+  },
+  {
+    "asset": "boettger-kueche",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\Bo╠êttger Ku╠êche_JVL17465_300px.jpg",
+    "alt": "Küche mit farbigen Fronten und Holzboden",
+    "widths": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  {
+    "asset": "boettger-bad",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\Bo╠êttger Bad_JVL18064_300px.jpg",
+    "alt": "Bad mit gläserner Dusche und gemustertem Boden",
+    "widths": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  {
+    "asset": "boettger-schlafen",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\Bo╠êttger Schlafzimmer_JVL1729_300px.jpg",
+    "alt": "Schlafzimmer mit Holzkopfteil und Einbauregal",
+    "widths": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  {
+    "asset": "boettger-flur",
+    "source": "ProjektInfosKontec\\Böttgerstraße 2\\Ute Hildenbeutel_AD_300px\\Ute Hildenbeutel_AD_300px\\Bo╠êttger Flur_JVL17426_300px 3.jpg",
+    "alt": "Flur mit Rundbogen und Blick in die Küche",
+    "widths": [
+      640,
+      1280,
+      1920
+    ]
+  },
+  {
+    "asset": "fuerstenberger-bad",
+    "source": "ProjektInfosKontec\\Fürstenberger 175\\PHOTO-2026-08-24-09-27-00.jpg",
+    "alt": "Bad mit gläserner Dusche und gemusterten Bodenfliesen",
+    "widths": [
+      640,
+      724
+    ]
+  },
+  {
+    "asset": "fuerstenberger-waschtisch",
+    "source": "ProjektInfosKontec\\Fürstenberger 175\\PHOTO-2026-08-24-09-27-17.jpg",
+    "alt": "Holzwaschtisch mit rundem Spiegel und Wandfliesen",
+    "widths": [
+      640,
+      724
+    ]
+  },
+  {
+    "asset": "fuerstenberger-wanne",
+    "source": "ProjektInfosKontec\\Fürstenberger 175\\PHOTO-2026-08-24-09-27-27.jpg",
+    "alt": "Freistehende Badewanne unter dem Fenster",
+    "widths": [
+      640,
+      1086
+    ]
+  },
+  {
+    "asset": "fuerstenberger-dusche",
+    "source": "ProjektInfosKontec\\Fürstenberger 175\\PHOTO-2026-08-24-09-28-50.jpg",
+    "alt": "Detail der Duscharmatur und der blauen Wandfliesen",
+    "widths": [
+      640,
+      724
+    ]
+  },
+  {
+    "asset": "hanauer-wohnen",
+    "source": "ProjektInfosKontec\\Wohnungssanierung Hanauer Landstraße 123\\PHOTO-2026-05-15-21-33-04.jpg",
+    "alt": "Helle Wohnräume mit Parkett und breitem Rundbogendurchgang",
+    "widths": [
+      640,
+      1280,
+      1600
+    ]
+  },
+  {
+    "asset": "hanauer-wc",
+    "source": "ProjektInfosKontec\\Wohnungssanierung Hanauer Landstraße 123\\PHOTO-2026-05-15-21-33-17.jpg",
+    "alt": "Separates WC mit farbigen Wandfliesen",
+    "widths": [
+      640,
+      1066
+    ]
+  },
+  {
+    "asset": "hanauer-bad",
+    "source": "ProjektInfosKontec\\Wohnungssanierung Hanauer Landstraße 123\\PHOTO-2026-05-15-21-33-38.jpg",
+    "alt": "Duschbad mit Glasabtrennung und grünen Bodenfliesen",
+    "widths": [
+      640,
+      1067
+    ]
+  },
+  {
+    "asset": "hanauer-detail",
+    "source": "ProjektInfosKontec\\Wohnungssanierung Hanauer Landstraße 123\\PHOTO-2026-05-15-21-34-21.jpg",
+    "alt": "Wandnische mit Holzablage und hellen Fliesen",
+    "widths": [
+      640,
+      1066
+    ]
+  }
+]
